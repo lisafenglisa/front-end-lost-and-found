@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./CreateForm.css";
+import FileUpload from "./FileUpload";
+import FileList from "./FileList";
 
 function CreateForm(props) {
   const [title, setTitle] = useState("");
@@ -10,6 +12,11 @@ function CreateForm(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [files, setFiles] = useState([]);
+
+  const removeFile = (filename) => {
+    setFiles(files.filter((file) => file.name !== filename));
+  };
 
   const submitForm = () => {
     axios.post("http://localhost:3000/api/v1/items", {
@@ -32,22 +39,34 @@ function CreateForm(props) {
     setName("");
     setEmail("");
     setPhone("");
+    setFiles([]);
   };
 
   return props.trigger ? (
-    <form onSubmit={handleSubmit} className="CreateForm">
+    <form
+      onSubmit={handleSubmit}
+      className="CreateForm"
+      action="/api/v1/items/"
+      method="POST"
+      encType="multipart/form-data"
+    >
       <div className="uploadPost">
         <h2>Report A Found Item</h2>
         <label>What item did you find?</label>
         <input
           type="text"
           value={title}
+          name="title"
           onChange={(e) => {
             setTitle(e.target.value);
           }}
         />
         <label>Category</label>
-        <select value={category} onChange={(e) => setCategory(e.target.value)}>
+        <select
+          value={category}
+          name="category"
+          onChange={(e) => setCategory(e.target.value)}
+        >
           <option>-- Please Select Category --</option>
           <option value="Animals/Pets">Animals/Pets</option>
           <option value="Bags,Baggage,Luggage">Bags,Baggage,Luggage</option>
@@ -71,6 +90,7 @@ function CreateForm(props) {
         <input
           type="text"
           value={location}
+          name="location"
           onChange={(e) => {
             setLocation(e.target.value);
           }}
@@ -78,6 +98,7 @@ function CreateForm(props) {
         <label>Description</label>
         <textarea
           value={description}
+          name="description"
           onChange={(e) => {
             setDescription(e.target.value);
           }}
@@ -87,6 +108,7 @@ function CreateForm(props) {
         <input
           type="text"
           value={name}
+          name="name"
           onChange={(e) => {
             setName(e.target.value);
           }}
@@ -95,6 +117,7 @@ function CreateForm(props) {
         <input
           type="text"
           value={email}
+          name="email"
           placeholder="example@gmail.com"
           onChange={(e) => {
             setEmail(e.target.value);
@@ -104,11 +127,15 @@ function CreateForm(props) {
         <input
           type="text"
           value={phone}
+          name="phone"
           placeholder="(703)888-8888"
           onChange={(e) => {
             setPhone(e.target.value);
           }}
         />
+        <label>Upload file</label>
+        <FileUpload files={files} setFiles={setFiles} removeFile={removeFile} />
+        <FileList files={files} removeFile={removeFile} />
         <h3>Thanks for your help!</h3>
         <button type="submit" onClick={submitForm}>
           Submit

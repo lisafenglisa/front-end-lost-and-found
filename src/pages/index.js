@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import "./index.css";
 import CreateForm from "../components/CreateForm";
+import { Navigate } from "react-router-dom";
 
 const Home = () => {
   const [buttonPopup, setButtonPopup] = useState(false);
+  const [goToBrowse, setGoToBrowse] = useState(false);
+
+  if (goToBrowse) {
+    return <Navigate to="/browse" />;
+  }
 
   return (
     <div>
@@ -18,7 +24,13 @@ const Home = () => {
       </section>
       <section>
         <p>I Lost Something!</p>
-        <button>Start Browsing</button>
+        <button
+          onClick={() => {
+            setGoToBrowse(true);
+          }}
+        >
+          Start Browsing
+        </button>
       </section>
     </div>
   );
