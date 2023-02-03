@@ -1,0 +1,56 @@
+.BrowsePage {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  bottom: 0;
+}
+
+.TitleWrap {
+  background-color: rgb(88, 88, 88);
+  color: white;
+  width: 80%;
+}
+
+.TitleWrap h1 {
+  font-size: 1.5rem;
+}
+
+.BrowseWrapper {
+  /* border: 1px solid red; */
+  background-color: #fc8c62;
+  width: 80%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.InnerPost {
+  border: 2px solid rgb(89, 88, 88);
+  width: 90%;
+  color: #ffffff;
+}
+
+.PostBar {
+  background-color: rgb(88, 88, 88);
+  display: flex;
+  justify-content: space-around;
+}
+
+.Post {
+  display: flex;
+  justify-content: space-around;
+}
+
+.text {
+  padding: 1rem;
+  text-align: center;
+  /* width: 100%; */
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+  color: rgb(88, 88, 88);
+}

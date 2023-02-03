@@ -22,16 +22,19 @@ const Home = () => {
       </div>
       <div className="wrapper">
         <section className="found">
-          <p>I Found Something!</p>
-          <button onClick={() => setButtonPopup(true)}>Create A Post</button>
+          <p className="sth">I Found Something!</p>
+          <button className="button-85" onClick={() => setButtonPopup(true)}>
+            Create A Post
+          </button>
           <CreateForm
             trigger={buttonPopup}
             setTrigger={setButtonPopup}
           ></CreateForm>
         </section>
         <section className="lost">
-          <p>I Lost Something!</p>
+          <p className="sth">I Lost Something!</p>
           <button
+            className="button-85"
             onClick={() => {
               setGoToBrowse(true);
             }}

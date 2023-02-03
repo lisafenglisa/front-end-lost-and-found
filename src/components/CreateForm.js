@@ -39,17 +39,10 @@ function CreateForm(props) {
     setName("");
     setEmail("");
     setPhone("");
-    setFiles([]);
   };
 
   return props.trigger ? (
-    <form
-      onSubmit={handleSubmit}
-      className="CreateForm"
-      action="/api/v1/items/"
-      method="POST"
-      encType="multipart/form-data"
-    >
+    <form onSubmit={handleSubmit} className="CreateForm">
       <div className="uploadPost">
         <h2>Report A Found Item</h2>
         <label>What item did you find?</label>
@@ -137,7 +130,7 @@ function CreateForm(props) {
         <FileUpload files={files} setFiles={setFiles} removeFile={removeFile} />
         <FileList files={files} removeFile={removeFile} />
         <h3>Thanks for your help!</h3>
-        <button type="submit" onClick={submitForm}>
+        <button className="button-78" type="submit" onClick={submitForm}>
           Submit
         </button>
         <button className="close-btn" onClick={() => props.setTrigger(false)}>
