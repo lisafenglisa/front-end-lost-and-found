@@ -1,5 +1,82 @@
-.BrowsePage {
-  /* border: 2px solid black; */
+.TitleWrap {
+  margin-top: 3rem;
+  /* border: 1px solid black; */
+}
+
+.PostBody {
+  /* border: 1px solid rgb(210, 16, 16); */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Post {
+  background-color: #f8916b;
+  color: #000000;
+  margin: 2rem;
+  padding: 2rem;
+  width: 15rem;
+  height: 15rem;
+  text-align: center;
+  box-shadow: rgba(73, 71, 64, 0.4) 5px 5px, rgba(122, 118, 103, 0.3) 10px 10px,
+    rgba(100, 84, 94, 0.2) 15px 15px, rgba(136, 123, 132, 0.1) 20px 20px,
+    rgba(53, 46, 51, 0.05) 25px 25px;
+}
+
+.Post:nth-child(even) {
+  background-color: #636262;
+  color: #ffffff;
+}
+
+.title1 {
+  text-decoration: underline;
+  padding-bottom: 0.3rem;
+  margin-top: 0.3rem;
+  font-size: 1.5rem;
+  font-family: "Trebuchet MS";
+}
+
+.text {
+  font-family: "Trebuchet MS";
+}
+
+/* Button CSS */
+.button-35 {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  margin-top: 0.5rem;
+  outline: none;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-35:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+/* .BrowsePage {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +96,6 @@
 }
 
 .BrowseWrapper {
-  /* border: 1px solid red; */
   background-color: #fc8c62;
   width: 80%;
   padding: 2rem 0;
@@ -47,10 +123,9 @@
 .text {
   padding: 1rem;
   text-align: center;
-  /* width: 100%; */
-}
+} */
 
-tr:nth-child(even) {
+/* tr:nth-child(even) {
   background-color: #ffffff;
   color: rgb(88, 88, 88);
-}
+} */

@@ -8,6 +8,7 @@ function CreateForm(props) {
   const [title, setTitle] = useState("");
   const [category, setCategory] = useState("");
   const [location, setLocation] = useState("");
+  const [date, setDate] = useState("");
   const [description, setDescription] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -27,6 +28,7 @@ function CreateForm(props) {
       finder_name: name,
       email: email,
       phone: phone,
+      date: date,
     });
   };
 
@@ -35,6 +37,7 @@ function CreateForm(props) {
     setTitle("");
     setCategory("");
     setLocation("");
+    setDate("");
     setDescription("");
     setName("");
     setEmail("");
@@ -86,6 +89,16 @@ function CreateForm(props) {
           name="location"
           onChange={(e) => {
             setLocation(e.target.value);
+          }}
+        />
+        <label>When did you find it?</label>
+        <input
+          type="text"
+          value={date}
+          name="date"
+          placeholder="MM/DD/YYYY"
+          onChange={(e) => {
+            setDate(e.target.value);
           }}
         />
         <label>Description</label>

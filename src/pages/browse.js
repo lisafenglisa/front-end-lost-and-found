@@ -20,23 +20,25 @@ const Browse = () => {
       </div>
       <div className="BrowseWrapper">
         <div className="InnerPost">
-          <tr className="PostBar">
+          {/* <tr className="PostBar">
             <th className="text">Picture</th>
             <th className="text">Data</th>
             <th className="text">Title</th>
             <th className="text">Category</th>
             <th className="text">Location</th>
-          </tr>
+          </tr> */}
           <div className="PostBody">
             {postList.map((val, key) => {
               return (
-                <tr className="Post" key={val.item_id}>
-                  <td className="text">pic</td>
-                  <td className="text">01/01/2023</td>
-                  <td className="text">{val.title}</td>
-                  <td className="text">{val.category}</td>
-                  <td className="text">{val.location}</td>
-                </tr>
+                <div className="Post" key={val.item_id}>
+                  {/* <td className="text">pic</td> */}
+                  <h3 className="title1">{val.title}</h3>
+                  <p className="text">Category: {val.category}</p>
+                  <p className="text">Found Date: {val.date}</p>
+                  <p className="text">Found Location: {val.location}</p>
+                  <p className="text">Description: {val.description}</p>
+                  <button className="button-35">Claim</button>
+                </div>
               );
             })}
           </div>
