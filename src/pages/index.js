@@ -13,17 +13,19 @@ const Home = () => {
 
   return (
     <div>
-      {/* <h1>Lost & Found</h1> */}
       <div className="title">
         <img
           src={require("./images/lost-and-found.jpg")}
           alt="lost-and-found-icon"
         />
       </div>
+      <div className="sub-title">
+        <h2>- Boradlands, VA -</h2>
+      </div>
       <div className="wrapper">
         <section className="found">
           <p className="sth">I Found Something!</p>
-          <button className="button-85" onClick={() => setButtonPopup(true)}>
+          <button className="button-55" onClick={() => setButtonPopup(true)}>
             Create A Post
           </button>
           <CreateForm
@@ -34,7 +36,7 @@ const Home = () => {
         <section className="lost">
           <p className="sth">I Lost Something!</p>
           <button
-            className="button-85"
+            className="button-55"
             onClick={() => {
               setGoToBrowse(true);
             }}

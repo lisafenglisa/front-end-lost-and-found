@@ -13,12 +13,13 @@
 }
 
 .Post {
-  background-color: #f8916b;
+  position: relative;
+  background-color: #ffa280;
   color: #000000;
   margin: 2rem;
   padding: 2rem;
-  width: 15rem;
-  height: 15rem;
+  width: 16rem;
+  height: 17rem;
   text-align: center;
   box-shadow: rgba(73, 71, 64, 0.4) 5px 5px, rgba(122, 118, 103, 0.3) 10px 10px,
     rgba(100, 84, 94, 0.2) 15px 15px, rgba(136, 123, 132, 0.1) 20px 20px,
@@ -58,8 +59,6 @@
   font-weight: 700;
   justify-content: center;
   line-height: 1;
-  margin: 0;
-  margin-top: 0.5rem;
   outline: none;
   padding: 0.8rem 1.2rem;
   text-align: center;
@@ -74,6 +73,12 @@
 
 .button-35:hover {
   box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+.Post .button-35 {
+  position: absolute;
+  bottom: 1.3rem;
+  left: 40%;
 }
 
 /* .BrowsePage {

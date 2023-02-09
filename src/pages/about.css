@@ -1,0 +1,65 @@
+.about-wrap {
+  margin: 2rem 1rem 1.5rem 0.5rem;
+  background-color: rgba(245, 250, 194, 0.5);
+  position: absolute;
+  height: 88%;
+}
+
+.pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pics a {
+  text-align: center;
+}
+
+.broadlands {
+  width: 90%;
+  margin: 5px;
+}
+
+.about-title {
+  margin-left: 2rem;
+  padding-top: 1.5rem;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: rgba(57, 210, 253, 0.635); */
+}
+
+.welcome {
+  text-align: center;
+  font-size: 1.5rem;
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.read-about {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 95%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4rem;
+  padding-top: 1rem;
+}
+
+.web-wrap {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.contact,
+.purpose {
+  /* border: 1px solid black; */
+  margin: 2rem;
+  width: 50%;
+  padding: 0 2rem;
+}
