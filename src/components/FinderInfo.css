@@ -1,0 +1,51 @@
+.finder-info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200, 192, 192, 0.3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.inner-info {
+  position: relative;
+  padding: 32px;
+  width: 30%;
+  border-radius: 10px;
+  /* max-width: 640px; */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Monaco";
+  font-size: 1.3rem;
+}
+
+em {
+  /* text-decoration: underline; */
+  color: coral;
+}
+
+.contact-title {
+  text-decoration: underline;
+  color: coral;
+}
+
+.inner-info .close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.close {
+  cursor: pointer;
+}

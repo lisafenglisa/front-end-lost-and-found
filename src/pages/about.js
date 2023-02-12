@@ -85,10 +85,10 @@ const About = () => {
           <div className="contact">
             <h2 className="welcome">Contact</h2>
             <p className="content">
-              This website is designed and built by Lisa Feng who's your
-              neighbor in the Broadlands community. If you are having tech
+              This website is designed and built by <em>Lisa Feng</em> who's
+              your neighbor in the Broadlands community. If you are having tech
               issues using this website, or if you have any feedback, please
-              feel free to contact Lisa at lisafenglisa@yahoo.com.
+              feel free to contact Lisa at <em>lisafenglisa@yahoo.com</em>.
             </p>
           </div>
         </div>
