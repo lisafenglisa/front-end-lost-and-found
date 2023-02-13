@@ -6,10 +6,14 @@ import Home from "./pages";
 import Category from "./pages/category";
 import Browse from "./pages/browse";
 import About from "./pages/about";
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <Router>
+      <Helmet>
+        <title>Lost&Found</title>
+      </Helmet>
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />

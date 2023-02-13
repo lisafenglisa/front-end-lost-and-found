@@ -1,0 +1,110 @@
+.category-wrap {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.category-title {
+  /* border: 1px solid black; */
+  margin: 3rem;
+}
+
+.cate {
+  /* border: 1px solid red; */
+  font-family: "Comic Sans MS";
+  font-weight: bold;
+  margin: 0.4rem 0.4rem;
+  width: 15rem;
+  height: 8rem;
+  padding-top: 6rem;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.pet {
+  background-image: url(./images/pets.avif);
+  background-size: cover;
+}
+
+.bag {
+  background-image: url(./images/bags.png);
+  background-size: cover;
+}
+
+.book {
+  background-image: url(./images/books.png);
+  background-size: cover;
+}
+
+.cloth {
+  background-image: url(./images/clothing.png);
+  background-size: cover;
+}
+
+.card {
+  background-image: url(./images/card.png);
+  background-size: cover;
+}
+
+.money {
+  background-image: url(./images/money.png);
+  background-size: cover;
+}
+
+.doc {
+  background-image: url(./images/doc.png);
+  background-size: cover;
+}
+
+.elec {
+  background-image: url(./images/elec.png);
+  background-size: cover;
+}
+
+.glass {
+  background-image: url(./images/glasses.png);
+  background-size: cover;
+}
+
+.tool {
+  background-image: url(./images/tools.png);
+  background-size: cover;
+}
+
+.jew {
+  background-image: url(./images/jewelry.png);
+  background-size: cover;
+}
+
+.key {
+  background-image: url(./images/key.png);
+  background-size: cover;
+}
+
+.music {
+  background-image: url(./images/music.png);
+  background-size: cover;
+}
+
+.sport {
+  background-image: url(./images/sports.png);
+  background-size: cover;
+}
+
+.toy {
+  background-image: url(./images/toys.png);
+  background-size: cover;
+}
+
+.wallet {
+  background-image: url(./images/wallet.png);
+  background-size: cover;
+}
+
+.other {
+  background-image: url(./images/other.png);
+  background-size: cover;
+}

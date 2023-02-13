@@ -35,7 +35,13 @@ const Browse = () => {
             {postList.map((val, key) => {
               return (
                 <div className="Post" key={val.item_id}>
-                  <img className="item-image" src={val.image_url} alt="item" />
+                  <a href={val.image_url} target="_blank" rel="noreferrer">
+                    <img
+                      className="item-image"
+                      src={val.image_url}
+                      alt="item"
+                    />
+                  </a>
                   <h3 className="title1">{val.title}</h3>
                   <p className="text">Category: {val.category}</p>
                   <p className="text">Found Date: {val.date}</p>
