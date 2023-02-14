@@ -51,6 +51,13 @@ Website
 - Users should be able to manage their posts (update, delete)
 - Users should be able to search by keyword
 
-### Other Links
+## Other Links
 
 Link to the [Backend repository](https://github.com/lisafenglisa/back-end-lost-and-found)
+
+## Website Screenshots
+
+![Home page](public/home.png)
+![Category](public/category.png)
+![Browse](public/browse.png)
+![About](public/about.png)
