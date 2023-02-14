@@ -45,12 +45,12 @@ Website
 - Users should be able to browse by category
 - Users should be able to claim an item then get the finder's information
 
-## Additional Feature Set(If with more time)
+## Additional Feature Set (If with more time)
 
 - Users should be able to sign up and log in to the accout
 - Users should be able to manage their posts (update, delete)
 - Users should be able to search by keyword
 
-### Others
+### Other Links
 
 Link to the [Backend repository](https://github.com/lisafenglisa/back-end-lost-and-found)
