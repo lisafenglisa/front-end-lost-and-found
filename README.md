@@ -4,7 +4,7 @@ Individual Capstone Project by Lisa Feng
 
 ## Project Description
 
-Lost & Found center is designed especially for Boradlands residents. The purpose of this website is to ensure all lost and found pets and properties are returned to their rightful owner promptly and efficiently. For someone who found something, they can create posts. For someone who lost something, they can browse all the posts others post to see if they can find what they lost.
+Lost & Found center is designed especially for Boradlands residents. The purpose of this website is to ensure all lost and found pets and properties are returned to their rightful owner promptly and efficiently. For someone who found something, they can create posts. For someone who lost something, they can browse all the posts to see if they can find what they lost.
 
 Project Link: [Lost & Found - Broadlands](https://lost-and-found-broadlands.herokuapp.com/)
 
