@@ -12,7 +12,7 @@ Project Link: [Lost & Found - Broadlands](https://lost-and-found-broadlands.hero
 
 - Learn to use Node JS and Express Js
 - Learn to use more React Component Libraries
-- Learn how to conncet Node JS with Postgres Database
+- Learn how to connect Node JS with Postgres Database
 - Learn to build file/image upload
 - Learn to use Google Firebase
 
